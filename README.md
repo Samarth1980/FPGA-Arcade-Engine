@@ -1,30 +1,8 @@
 # Shopping Cart Rush: A VGA-Based Arcade Engine on FPGA
+## designed by Samarth Saxena & Aryan Rahman
 
-+-------------------------------------------------------+
-   |                                                       |
-   v                                                       |
-+--------------+    ENTER Pressed     +---------------+    3 Lives Lost    +--------------+
-| START_SCREEN | -------------------> |  ACTIVE_PLAY  | -----------------> |  GAME_OVER   |
-+--------------+                      +---------------+                    +--------------+
-^                                      |                                   |
-|                               Collision Latch                            |
-|                                      v                                   |
-|                             [ Decrement Life ]                           |
-|                                      |                                   |
-+--------------------------------------+-----------------------------------+
-Reset Switch
-
-[![Target Board](https://img.shields.io/badge/Hardware-Intel%20Cyclone%20V%20(DE1--SoC)-blue)](#hardware-specifications)
-[![Resolution](https://img.shields.io/badge/Display-640x480%20%40%2060Hz-orange)](#video-and-graphics-pipeline)
-[![Simulation](https://img.shields.io/badge/Verification-ModelSim%20Cycle--Accurate-brightgreen)](#simulation--verification-modelsim)
-[![Language](https://img.shields.io/badge/Language-Verilog%20HDL-red)](#tools--methodology)
 
 A real-time, hardware-accelerated 2D endless-runner arcade game engineered in Verilog HDL for the Intel Cyclone V SoC FPGA. The system interfaces directly with a VGA monitor, PS/2 keyboard, and onboard 7-segment displays to deliver a complete hardware arcade experience with deterministic, zero-latency frame rendering.
-
----
-
-> ### ⚠️ Academic Integrity Policy Disclaimer
-> In compliance with the **University of Toronto Code of Behaviour on Academic Matters**, raw Verilog source code (`.v` files) is omitted from this public repository to safeguard the academic integrity of future course offerings. This repository serves as a **public technical specification, architectural review, and simulation verification artifact**. Verified simulation waveforms, schematics, and presentation media are documented below. Verilog modules and testbenches can be reviewed privately upon direct request by engineering hiring teams.
 
 ---
 
