@@ -1,5 +1,19 @@
 # Shopping Cart Rush: A VGA-Based Arcade Engine on FPGA
 
++-------------------------------------------------------+
+   |                                                       |
+   v                                                       |
++--------------+    ENTER Pressed     +---------------+    3 Lives Lost    +--------------+
+| START_SCREEN | -------------------> |  ACTIVE_PLAY  | -----------------> |  GAME_OVER   |
++--------------+                      +---------------+                    +--------------+
+^                                      |                                   |
+|                               Collision Latch                            |
+|                                      v                                   |
+|                             [ Decrement Life ]                           |
+|                                      |                                   |
++--------------------------------------+-----------------------------------+
+Reset Switch
+
 [![Target Board](https://img.shields.io/badge/Hardware-Intel%20Cyclone%20V%20(DE1--SoC)-blue)](#hardware-specifications)
 [![Resolution](https://img.shields.io/badge/Display-640x480%20%40%2060Hz-orange)](#video-and-graphics-pipeline)
 [![Simulation](https://img.shields.io/badge/Verification-ModelSim%20Cycle--Accurate-brightgreen)](#simulation--verification-modelsim)
