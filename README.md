@@ -1,5 +1,5 @@
 # Shopping Cart Rush: A VGA-Based Arcade Engine on FPGA
-## designed by Samarth Saxena & Aryan Rahman
+### designed by Samarth Saxena & Aryan Rahman
 
 
 A real-time, hardware-accelerated 2D endless-runner arcade game engineered in Verilog HDL for the Intel Cyclone V SoC FPGA. The system interfaces directly with a VGA monitor, PS/2 keyboard, and onboard 7-segment displays to deliver a complete hardware arcade experience with deterministic, zero-latency frame rendering.
