@@ -66,18 +66,17 @@ Every digital module was simulated and verified for cycle-accurate behavior in M
 ### 1. Master FSM & Game State Transitions
 Verifying synchronous state transitions from `START` (`00`) to `PLAY` (`01`) upon user input, life count tracking, and immediate assertion of game-over display states upon terminal collision.
 
-![Game State Waveform](./ModelSim%20Waveforms/Appendix%20B_%20Model%20Sim%20waveform%20for%20game%20state.png)
+![Game State Waveform](./ModelSim%20Waveforms/ModelSim_GameStates.png)
 
 ### 2. Dynamic Speed Scaling Logic
 Validating that increases in score trigger proper scaling of obstacle vertical step rates (`shopper_y`) without causing clock-edge setup/hold hazards.
 
-![Speed Scaling Waveform](./ModelSim%20Waveforms/Appendix%20C_%20Model%20Sim%20waveform%20for%20increasing%20speed%20of%20game.png)
+![Speed Scaling Waveform](./ModelSim%20Waveforms/ModelSim_IncreasingSpeed.png)
 
 ### 3. Multi-Object Spawning & Collision Logic
 Simulating 16-bit LFSR pseudo-random lane selection, simultaneous coin and shopper tracking, and single-cycle `hit` pulse assertions for score incrementation and coordinate clearance.
 
-![Coin & Collision Waveform](./ModelSim%20Waveforms/Appendix%20D_%20Model%20Sim%20waveform%20for%20coin%20objects.png)
-
+![Coin & Collision Waveform](./ModelSim%20Waveforms/ModelSim_CoinObjects.png)
 ---
 
 ## Hardware Specifications
